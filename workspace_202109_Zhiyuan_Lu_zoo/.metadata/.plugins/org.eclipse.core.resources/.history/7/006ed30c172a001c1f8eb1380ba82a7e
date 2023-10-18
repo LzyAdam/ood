@@ -1,0 +1,19 @@
+package collectionTest;
+
+
+import java.sql.Date;
+import java.util.ArrayList;
+
+public class collection {
+
+         public void test1() {
+        	 ArrayList coll=new ArrayList();
+        	 coll.add("AA");
+        	 coll.add("BB");
+        	 coll.add(123);
+        	 //coll.add(new Date));
+        	System.out.println(coll.size()); 
+        	 
+         }	
+	
+}

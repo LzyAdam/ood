@@ -1,0 +1,33 @@
+package Generic;
+
+import java.util.ArrayList;
+
+public class GenericTest {
+
+	@SuppressWarnings("unused")
+	public void test1() {
+		ArrayList list=new ArrayList();
+	
+		list.add(78);
+		list.add(86);
+		list.add(79);
+		list.add(83);
+		list.add(73);
+		list.add(89);
+		
+		for(Object score: list) {
+			int stuScore=(int)score;
+			System.out.println(stuScore);
+		}
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+}
+}

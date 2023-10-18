@@ -1,0 +1,4 @@
+10001,iphone13,799.0
+10005,iphone13pro,999.0
+10002,samsungS21,688.0
+10000,macbookpro,1999.0

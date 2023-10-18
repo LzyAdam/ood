@@ -1,0 +1,16 @@
+package edu.neu.csye6200;
+
+public class Demo {
+	public static void demo() {
+		 TwoAlternatingThreads t = new TwoAlternatingThreads();
+		Thread t1 = new Thread( t);
+		Thread t2 = new Thread( t);
+		t1.setName("thread1");
+		
+		t1.start();
+		System.out.println(t1.currentThread().getName()+t1);
+		t2.setName("thread2");
+		t2.start();
+		System.out.println(t2.currentThread().getName()+t2);
+	}
+}

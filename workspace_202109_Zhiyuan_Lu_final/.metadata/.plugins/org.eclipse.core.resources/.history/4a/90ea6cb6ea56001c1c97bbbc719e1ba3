@@ -1,0 +1,118 @@
+package edu.neu.csye6200;
+
+import java.util.ArrayList;
+import java.util.Comparator;
+import java.util.List;
+
+public class WeightLossClub extends AbstractClub {
+	List<Person> p=new ArrayList<>();
+	
+	@Override
+	public void addPerson(AbstractPerson abstractPerson) {
+		// Add a person
+		p.add((Person) abstractPerson);
+	}
+
+	@Override
+	public String getPersonInfo() {
+		// get personInfor
+		int len = p.size();
+		String s = "There are " + len + " person hired\n";
+		for (AbstractPerson ap: p) {
+			s += ap.toString() + "\n";
+		}
+		return s;
+	}
+
+	@Override
+	public void showPerson() {
+		// TODO Auto-generated method stub
+//		for (AbstractPerson ap: p) {
+//			ap.show();
+//		}
+		System.out.println(p.toString());
+		System.out.println("============================================");
+	}
+
+	@Override
+	public void sortPersonByName() {
+		// TODO Auto-generated method stub
+		System.out.println(" sortPersonByName ");
+		p.sort(Comparator.comparing(Person::getName));
+		System.out.println(p);
+		System.out.println("============================================");
+	}
+
+	@Override
+	public void sortPersonByWeightLoss() {
+		// TODO Auto-generated method stub
+		System.out.println("sortPersonByWeightLoss");
+		p.sort(Comparator.comparing(Person::getWeightLossLbs));
+		//p.sort((o1,o2)->o1.getWeightLossLbs()-o2.getWeightLossLbs());
+		System.out.println(p.toString());
+		System.out.println("============================================");
+	}
+
+	@Override
+	public void graphCurrentWeightLoss() {
+		// TODO Auto-generated method stub
+		System.out.println("graph Current Weight Loss");
+		p.sort((o1,o2)->o1.getWeightLossLbs()-o2.getWeightLossLbs());
+		int i;int len;len=p.size();int s=0;
+		for(i=0;i<len;i++) {
+		s=p.get(i).getWeightLossLbs();
+		
+		System.out.print(s);
+		while(s>0) {
+			System.out.print("*");
+			s--;
+			
+			}
+		System.out.println("\n");
+		
+		}
+		System.out.println("================================================");
+	}
+
+	@Override
+	public void graphProjectedWeightLossByOneMonth() {
+		// TODO Auto-generated method stub
+		System.out.println("graph Projected Weight Loss By One Month");
+		p.sort((o1,o2)->o1.getWeightLossLbs()-o2.getWeightLossLbs());
+		int i;int len;len=p.size();int s=0;
+		for(i=0;i<len;i++) {
+		s=p.get(i).getWeightLossLbs()+10;
+		
+		System.out.print(s);
+		while(s>0) {
+			System.out.print("*");
+			s--;
+			
+			}
+		System.out.println("\n");
+		
+		}
+		System.out.println("================================================");
+	}
+
+	@Override
+	public void graphProjectedWeightLossByOneYear() {
+		// TODO Auto-generated method stub
+		System.out.println("graph Projected Weight Loss By One Year");
+		p.sort((o1,o2)->o1.getWeightLossLbs()-o2.getWeightLossLbs());
+		int i;int len;len=p.size();int s=0;
+		for(i=0;i<len;i++) {
+		s=p.get(i).getWeightLossLbs()*10;
+		
+		System.out.print(s);
+		while(s>0) {
+			System.out.print("*");
+			s--;
+			
+			}
+		System.out.println("\n");
+		
+	}
+		System.out.println("================================================");
+	}
+}

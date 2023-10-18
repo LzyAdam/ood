@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename package &apos;csye6200.neu.edu&apos; to &apos;edu.neu.csye6200&apos;&#x0D;&#x0A;- Original project: &apos;project1&apos;&#x0D;&#x0A;- Original element: &apos;project1/src/csye6200.neu.edu&apos;&#x0D;&#x0A;- Renamed element: &apos;project1/src/edu.neu.csye6200&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename package &apos;csye6200.neu.edu&apos;" flags="589830" hierarchical="false" id="org.eclipse.jdt.ui.rename.package" input="/src&lt;csye6200.neu.edu" name="edu.neu.csye6200" qualified="false" references="true" stamp="1638753738591" textual="false" version="1.0"/>
+</session>

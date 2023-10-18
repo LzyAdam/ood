@@ -1,0 +1,22 @@
+package Assignment1_zoo;
+
+public class MethodArgsTest {
+     public static void main(String[] args) {
+    	 MethodArgsTest test=new MethodArgsTest();
+    	 test.show(12);
+    	 test.show("hello","world");
+	
+     }
+
+
+public void show (int i) {System.out.println(i);}
+
+public void show(String s) {System.out.println(s);
+	
+}
+public void show(String ...strs) {System.out.println(strs);
+	
+}
+
+}
+	

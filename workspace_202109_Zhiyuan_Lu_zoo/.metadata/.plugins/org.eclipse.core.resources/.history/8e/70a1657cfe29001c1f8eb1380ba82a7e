@@ -1,0 +1,11 @@
+package supertest;
+
+public class Test {
+        public static void main(String[] args) {
+			Student s=new Student();
+			s.show();
+			s.study();
+			Student s1=new Student("Tom",12,"IT");
+			s1.show();
+		}
+}

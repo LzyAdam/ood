@@ -1,0 +1,294 @@
+package edu.neu.csye6200;
+
+import java.util.ArrayList;
+import java.util.Comparator;
+import java.util.List;
+
+public class WeightLossClub extends AbstractClub {
+	List<Person> p=new ArrayList<>();
+	
+	@Override
+	public void addPerson(AbstractPerson person) {
+		// Add a person
+		p.add((Person) person);
+	}
+
+	@Override
+	public String getPersonInfo() {
+		// get personInfomation
+		int len = p.size();
+		String s = len + " person added\n";
+		for (AbstractPerson ap: p) {
+			s += ap.toString() + "\n";
+		}
+		return s.toString();
+	}
+
+	@Override
+	public void sortandshowPerson() {
+		// Override toString method
+		// sort person by name and print the result
+				System.out.println(" sort Person By Name ");
+				p.sort(Comparator.comparing(Person::getName));
+				System.out.println(p);
+				// sort Person By Weight Loss
+				System.out.println("sort Person By Weight Loss");
+				p.sort(Comparator.comparing(Person::getWeightLossLbs));
+				System.out.println(p);
+				System.out.println("graph Current Weight Loss");
+				p.sort(Comparator.comparing(Person::getWeightLossLbs));
+				
+			    
+				
+				int i;
+				int len;
+				len=p.size();
+				int s=0;
+				for(i=0;i<len;i++) {
+				s=p.get(i).getWeightLossLbs();
+				
+				System.out.print(s);
+				while(s>0) {
+					System.out.print("*");
+					s--;
+					
+					}
+					System.out.println("\n");
+				
+				}
+				
+				p.sort((o1,o2)->o2.getWeightLossLbs()-o1.getWeightLossLbs());
+				int t;
+				int lenth;
+				lenth=p.size();
+				int e=0;
+				for(t=0;t<lenth;t++) {
+					e=p.get(t).getWeightLossLbs();
+					System.out.print(e);
+					while(e>0) {
+						
+						System.out.print("*");
+						e--;
+					}
+					System.out.println("\n");
+				}
+				
+				System.out.println("graph Projected Weight Loss By One Month");
+				
+				p.sort(Comparator.comparing(Person::getWeightLossLbs));
+				int i1;
+				int len1;
+				len1=p.size();
+				int s1=0;
+				for(i1=0;i1<len;i1++) {
+				s1=p.get(i1).getWeightLossLbs()+10;
+				
+				System.out.print(s1);
+				while(s1>0) {
+					System.out.print("*");
+					s1--;
+					
+					}
+				System.out.println("\n");
+				
+				}
+				p.sort((o1,o2)->o2.getWeightLossLbs()-o1.getWeightLossLbs());
+				int t1;
+				int lenth1;
+				lenth1=p.size();
+				int e1=0;
+				for(t1=0;t1<lenth1;t1++) {
+					e1=p.get(t1).getWeightLossLbs()+10;
+					System.out.print(e1);
+					while(e1>0) {
+						
+						System.out.print("*");
+						e1--;
+					}
+					System.out.println("\n");
+				}
+				System.out.println("graph Projected Weight Loss By One Year");
+				p.sort(Comparator.comparing(Person::getWeightLossLbs));
+				int i2;
+				int len2;
+				len2=p.size();
+				int s2=0;
+				for(i2=0;i2<len;i2++) {
+					s2=p.get(i2).getWeightLossLbs()*10;
+				
+					System.out.print(s2);
+					while(s2>0) {
+					System.out.print("*");
+					s2--;
+					}
+					System.out.println("\n");
+				
+			}
+				p.sort((o1,o2)->o2.getWeightLossLbs()-o1.getWeightLossLbs());
+				int t2;
+				int lenth2;
+				lenth=p.size();
+				int e2=0;
+				for(t2=0;t2<lenth;t2++) {
+					e2=p.get(t2).getWeightLossLbs()*10;
+					System.out.print(e2);
+					while(e2>0) {
+						
+						System.out.print("*");
+						e2--;
+					}
+					System.out.println("\n");
+				}
+				
+				
+				
+				
+	}
+
+//	@Override
+//	public void sortPersonByName() {
+//		// sort person by name and print the result
+//		System.out.println(" sort Person By Name ");
+//		p.sort(Comparator.comparing(Person::getName));
+//		System.out.println(p);
+//		System.out.println("==========================================================================");
+//	}
+
+//	@Override
+//	public void sortPersonByWeightLoss() {
+//		// sort Person By Weight Loss
+//		System.out.println("sort Person By Weight Loss");
+//		p.sort(Comparator.comparing(Person::getWeightLossLbs));
+//		System.out.println(p);
+//		
+//		System.out.println("===================================================================");
+//	}
+
+//	@Override
+//	public void graphCurrentWeightLoss() {
+//		
+//		System.out.println("graph Current Weight Loss");
+//		p.sort(Comparator.comparing(Person::getWeightLossLbs));
+//		
+//	    
+//		
+//		int i;
+//		int len;
+//		len=p.size();
+//		int s=0;
+//		for(i=0;i<len;i++) {
+//		s=p.get(i).getWeightLossLbs();
+//		
+//		System.out.print(s);
+//		while(s>0) {
+//			System.out.print("*");
+//			s--;
+//			
+//			}
+//			System.out.println("\n");
+//		
+//		}
+//		
+//		p.sort((o1,o2)->o2.getWeightLossLbs()-o1.getWeightLossLbs());
+//		int t;
+//		int lenth;
+//		lenth=p.size();
+//		int e=0;
+//		for(t=0;t<lenth;t++) {
+//			e=p.get(t).getWeightLossLbs();
+//			System.out.print(e);
+//			while(e>0) {
+//				
+//				System.out.print("*");
+//				e--;
+//			}
+//			System.out.println("\n");
+//		}
+//		
+//		
+//		
+//		System.out.println("=========================================================================");
+//	}
+
+//	@Override
+//	public void graphProjectedWeightLossByOneMonth() {
+//		
+//		System.out.println("graph Projected Weight Loss By One Month");
+//		
+//		p.sort(Comparator.comparing(Person::getWeightLossLbs));
+//		int i;
+//		int len;
+//		len=p.size();
+//		int s=0;
+//		for(i=0;i<len;i++) {
+//		s=p.get(i).getWeightLossLbs()+10;
+//		
+//		System.out.print(s);
+//		while(s>0) {
+//			System.out.print("*");
+//			s--;
+//			
+//			}
+//		System.out.println("\n");
+//		
+//		}
+//		p.sort((o1,o2)->o2.getWeightLossLbs()-o1.getWeightLossLbs());
+//		int t;
+//		int lenth;
+//		lenth=p.size();
+//		int e=0;
+//		for(t=0;t<lenth;t++) {
+//			e=p.get(t).getWeightLossLbs()+10;
+//			System.out.print(e);
+//			while(e>0) {
+//				
+//				System.out.print("*");
+//				e--;
+//			}
+//			System.out.println("\n");
+//		}
+//		System.out.println("===============================================================");
+//	}
+//
+//	@Override
+//	public void graphProjectedWeightLossByOneYear() {
+//		
+//		System.out.println("graph Projected Weight Loss By One Year");
+//		p.sort(Comparator.comparing(Person::getWeightLossLbs));
+//		int i;
+//		int len;
+//		len=p.size();
+//		int s=0;
+//		for(i=0;i<len;i++) {
+//			s=p.get(i).getWeightLossLbs()*10;
+//		
+//			System.out.print(s);
+//			while(s>0) {
+//			System.out.print("*");
+//			s--;
+//			}
+//			System.out.println("\n");
+//		
+//	}
+//		p.sort((o1,o2)->o2.getWeightLossLbs()-o1.getWeightLossLbs());
+//		int t;
+//		int lenth;
+//		lenth=p.size();
+//		int e=0;
+//		for(t=0;t<lenth;t++) {
+//			e=p.get(t).getWeightLossLbs()*10;
+//			System.out.print(e);
+//			while(e>0) {
+//				
+//				System.out.print("*");
+//				e--;
+//			}
+//			System.out.println("\n");
+//		}
+//		System.out.println("========================================================================");
+//	}
+
+	
+
+	
+}

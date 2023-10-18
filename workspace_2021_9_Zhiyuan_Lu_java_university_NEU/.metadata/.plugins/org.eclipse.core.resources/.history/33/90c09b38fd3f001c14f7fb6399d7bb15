@@ -1,0 +1,153 @@
+package neu.edu.csye6200;
+
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Collections;
+import java.util.Comparator;
+import java.util.List;
+
+public class UniversityBase implements AbstractSchoolAPI {
+	
+	 List<AbstractPersonAPI> student=new ArrayList<>();
+
+	@Override
+	public void addEmployee(AbstractPersonAPI employee) {
+		// TODO Auto-generated method stub
+		//List<Student>student=new ArrayList<>();
+		//List<Employee>employee=new  ArrayList<>();
+//		student.add(new Student(10006,"Tom","Ford",22,3.5));
+//		student.add(new Student(10005,"Adam","Smith",25,3.0));
+//		student.add(new Student(10004,"Chris","Johnson",21,3.4));
+	}
+
+	@Override
+	public void addStudent(AbstractPersonAPI student) {
+		this.student.add(student);
+	}
+
+	@Override
+	public String getEmployeesInfo() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public void showEmployees() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public String getStudentsInfo() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public void showStudents() {
+		System.out.println("show student state");
+		System.out.println(student);
+		
+	}
+
+	@Override
+	public void show() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void sortEmployees(Comparator<AbstractPersonAPI> c) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void sortStudents(Comparator<AbstractPersonAPI> c) {
+		 /*******************sort student*****************************/
+		 /*******************sort student by ID*****************************/
+		Collections.sort(student, new Comparator<AbstractPersonAPI>() {
+
+//			@Override
+//			public int compare(Student o1, Student o2) {
+//				// TODO Auto-generated method stub
+//				return Integer.compare(o1.getId(), o2.getId());
+//			}
+
+			@Override
+			public int compare(AbstractPersonAPI o1, AbstractPersonAPI o2) {
+				// TODO Auto-generated method stub
+				return Integer.compare(o1.getId(), o2.getId());
+			}} );
+		System.out.println("show student state sort by ID");
+		System.out.println(student);
+		/*******************sort student by FirstName*****************************/
+		Collections.sort(student,new Comparator<AbstractPersonAPI>() {
+
+//			@Override
+//			public int compare(Student o1, Student o2) {			
+//				return o1.getFirstName().compareTo(o2.getFirstName());
+//			}
+
+			@Override
+			public int compare(AbstractPersonAPI o1, AbstractPersonAPI o2) {
+				// TODO Auto-generated method stub
+				return o1.getFirstName().compareTo(o2.getFirstName());
+			}});
+		System.out.println("show student state sort by FirstName");
+		System.out.println(student);
+		/*******************sort student by LatName*****************************/
+   	Collections.sort(student,new Comparator<AbstractPersonAPI>() {
+
+//			@Override
+//			public int compare(Student o1, Student o2) {			
+//				return o1.getLastName().compareTo(o2.getLastName());
+//			}
+
+			@Override
+			public int compare(AbstractPersonAPI o1, AbstractPersonAPI o2) {
+				// TODO Auto-generated method stub
+				return o1.getLastName().compareTo(o2.getLastName());
+			}});
+		System.out.println("show student state sort by LastName");
+		System.out.println(student);
+//   	/*******************sort student by Age*****************************/
+   	Collections.sort(student, new Comparator<AbstractPersonAPI>() {
+
+//			@Override
+//			public int compare(Student o1, Student o2) {
+//				// TODO Auto-generated method stub
+//				return Integer.compare(o1.getAge(), o2.getAge());
+//			}
+
+			@Override
+			public int compare(AbstractPersonAPI o1, AbstractPersonAPI o2) {
+				// TODO Auto-generated method stub
+				return Integer.compare(o1.getAge(), o2.getAge());
+			}} );
+		System.out.println("show student state sort by Age");
+		System.out.println(student);
+//		/*******************sort student by GPA*****************************/
+		Collections.sort(student, new Comparator<AbstractPersonAPI>() {
+
+//			@Override
+//			public int compare(Student o1, Student o2) {
+//				// TODO Auto-generated method stub
+//				return Double.compare(o1.getGpa(), o2.getGpa());
+//			}
+
+			@Override
+			public int compare(AbstractPersonAPI o1, AbstractPersonAPI o2) {
+				// TODO Auto-generated method stub
+				return Double.compare(o1.getGpa(), o2.getGpa());
+			}} );
+		System.out.println("show student state sort by GPA");
+		System.out.println(student);
+		
+		/*******************sort student finish*****************************/
+		
+	}
+
+	
+}
+

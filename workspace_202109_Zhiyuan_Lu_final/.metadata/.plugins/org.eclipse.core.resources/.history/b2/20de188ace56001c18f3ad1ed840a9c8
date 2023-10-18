@@ -1,0 +1,116 @@
+package edu.neu.csye6200;
+
+public class Person extends AbstractPerson{
+	private int id;
+	private int age;
+	private String name;
+	private int weightLbs;
+	private int weightLossLbs;
+	Person(){
+		
+	}
+	public Person(int id, int age, String name, int weightLbs, int weightLossLbs) {
+		super();
+		this.id = id;
+		this.age = age;
+		this.name = name;
+		this.weightLbs = weightLbs;
+		this.weightLossLbs = weightLossLbs;
+	}
+//	public int getId() {
+//		return id;
+//	}
+//	public void setId(int id) {
+//		this.id = id;
+//	}
+//	public int getAge() {
+//		return age;
+//	}
+//	public void setAge(int age) {
+//		this.age = age;
+//	}
+//	public String getName() {
+//		return name;
+//	}
+//	public void setName(String name) {
+//		this.name = name;
+//	}
+//	public int getWeightLbs() {
+//		return weightLbs;
+//	}
+//	public void setWeightLbs(int weightLbs) {
+//		this.weightLbs = weightLbs;
+//	}
+//	public Integer getWeightLossLbs() {
+//		return weightLossLbs;
+//	}
+//	public void setWeightLossLbs(int weightLossLbs) {
+//		this.weightLossLbs = weightLossLbs;
+//	}
+//	@Override
+//	public String toString() {
+//		return "Person [id=" + id + ", age=" + age + ", name=" + name + ", weightLbs=" + weightLbs + ", weightLossLbs="
+//				+ weightLossLbs + "]"+"\n";
+//	}
+	@Override
+	public int getId() {
+	// TODO Auto-generated method stub
+	return id;
+	}
+	@Override
+	public void setId(int id) {
+	// TODO Auto-generated method stub
+	this.id=id;
+	}
+	@Override
+	public int getAge() {
+		// TODO Auto-generated method stub
+		return age;
+	}
+	@Override
+	public void setAge(int age) {
+		// TODO Auto-generated method stub
+		this.age=age;
+	}
+	@Override
+	public String getName() {
+	// TODO Auto-generated method stub
+	return name;
+	}
+	@Override
+	public void setName(String Name) {
+	// TODO Auto-generated method stub
+		this.name=name;
+	}
+	@Override
+	public int getWeightLbs() {
+	// TODO Auto-generated method stub
+		return weightLbs;
+	}
+	@Override
+	public void setWeightLbs(int weightLbs) {
+	// TODO Auto-generated method stub
+		this.weightLbs=weightLbs;
+	}
+	@Override
+	public Integer getWeightLossLbs() {
+	// TODO Auto-generated method stub
+	return weightLossLbs;
+	}
+	@Override
+	public void setWeightLossLbs(int weightLossLbs) {
+	// TODO Auto-generated method stub
+		this.weightLossLbs=weightLossLbs;
+	}
+	@Override
+	public void show() {
+	// TODO Auto-generated method stub
+	
+	}
+	
+	
+	
+	
+	
+	
+}

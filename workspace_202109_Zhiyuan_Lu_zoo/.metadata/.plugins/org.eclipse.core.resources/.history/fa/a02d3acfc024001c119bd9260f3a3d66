@@ -1,0 +1,24 @@
+package edu.neu.csye6200;
+
+import java.util.*;
+
+public class ZooAnimals {
+	List<AnimalAPI> list = new ArrayList<>();
+	
+	public void add(AnimalAPI o) {
+		list.add(o);
+	}
+	
+	public void showList() {
+		for (AnimalAPI a : list) {
+			System.out.println(a);
+		}
+	}
+	
+	public static void demo() {
+		ZooAnimals z = new ZooAnimals();
+		z.add(new Cat());
+		z.showList();
+		
+	}
+}

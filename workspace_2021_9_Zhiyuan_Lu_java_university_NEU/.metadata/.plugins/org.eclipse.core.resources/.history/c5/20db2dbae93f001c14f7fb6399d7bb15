@@ -1,0 +1,95 @@
+package neu.edu.csye6200;
+
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
+import java.util.List;
+
+public class NortheasternU extends UniversityBase implements AbstractSchoolAPI{
+ public static void demo(){
+ /*******************instantiate student*****************************/
+		List<Student>student=new ArrayList<>();
+		
+		student.add(new Student(10006,"Tom","Ford",22,3.5));
+		student.add(new Student(10005,"Adam","Smith",25,3.0));
+		student.add(new Student(10004,"Chris","Johnson",21,3.4));
+/*******************show student state*****************************/
+		System.out.println("show student state");
+		System.out.println(student);
+ /*******************sort student*****************************/
+		 /*******************sort student by ID*****************************/
+		Collections.sort(student, new Comparator<Student>() {
+
+			@Override
+			public int compare(Student o1, Student o2) {
+				// TODO Auto-generated method stub
+				return Integer.compare(o1.getId(), o2.getId());
+			}} );
+		System.out.println("show student state sort by ID");
+		System.out.println(student);
+		/*******************sort student by FirstName*****************************/
+		Collections.sort(student,new Comparator<Student>() {
+
+			@Override
+			public int compare(Student o1, Student o2) {			
+				return o1.getFirstName().compareTo(o2.getFirstName());
+			}});
+		System.out.println("show student state sort by FirstName");
+    	System.out.println(student);
+		/*******************sort student by LatName*****************************/
+    	Collections.sort(student,new Comparator<Student>() {
+
+			@Override
+			public int compare(Student o1, Student o2) {			
+				return o1.getLastName().compareTo(o2.getLastName());
+			}});
+		System.out.println("show student state sort by LastName");
+    	System.out.println(student);
+    	/*******************sort student by Age*****************************/
+    	Collections.sort(student, new Comparator<Student>() {
+
+			@Override
+			public int compare(Student o1, Student o2) {
+				// TODO Auto-generated method stub
+				return Integer.compare(o1.getAge(), o2.getAge());
+			}} );
+		System.out.println("show student state sort by Age");
+		System.out.println(student);
+		/*******************sort student by GPA*****************************/
+		Collections.sort(student, new Comparator<Student>() {
+
+			@Override
+			public int compare(Student o1, Student o2) {
+				// TODO Auto-generated method stub
+				return Double.compare(o1.getGpa(), o2.getGpa());
+			}} );
+		System.out.println("show student state sort by GPA");
+		System.out.println(student);
+		
+		/*******************sort student finish*****************************/
+		System.out.println("******************************************************");
+		
+		
+		List<Employee>employee=new  ArrayList<>();
+		employee.add(new Employee(20007,"David","Backer",32,35));
+		employee.add(new Employee(20008,"Toms","Fords",39,57));
+		employee.add(new Employee(20006,"Adam","Tomas",36,55));
+		System.out.println("show employee state");
+		System.out.println(employee);
+		
+	
+	
+}
+	
+//	List<Student>student=new ArrayList<>();
+//	List<Employee>employee=new  ArrayList<>();
+//	student.add(new Student(10006,"Tom","Ford",22,3.5));
+//	
+//	student.add(new Student("Jack",24,10009,4.8,20001));
+//	student.add(new Student("Tom",22,10006,3.0,20004));
+	
+		
+	
+	
+
+}

@@ -1,0 +1,7 @@
+package csye6200.neu.edu;
+
+public class Driver {
+	public static void main(String[] args) {
+		Demo.demo();
+	}
+}

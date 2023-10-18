@@ -1,0 +1,77 @@
+package neu.edu.csye6200;
+
+import java.util.Comparator;
+
+public class UniversityBase implements AbstractSchoolAPI {
+
+	@Override
+	public void addEmployee(AbstractPersonAPI employee) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void addStudent(AbstractPersonAPI student) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public String getEmployeesInfo() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public void showEmployees() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public String getStudentsInfo() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public void showStudents() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void show() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void sortEmployees(Comparator<AbstractPersonAPI> c) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void sortStudents(Comparator<AbstractPersonAPI> c) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	
+
+	/*	a. hire Employee (addEmployee);
+	 *  b. enroll Student (addStudent);
+	 *  c. show state (all employed Employee and enrolled Student objects)
+	 *  d. sort Employees
+	 *  e. sort Students
+	 *  */
+	
+	
+	
+	
+	
+	
+	
+	
+}

@@ -1,0 +1,17 @@
+package cn.zoo;
+
+public class inherritage {
+	public static void main(String[] args) {
+		Person p1= new Person();
+		p1.age=1;
+		
+		student s1=new Student();
+		s1.age=5;
+		
+		
+	}
+
+}
+
+
+ 

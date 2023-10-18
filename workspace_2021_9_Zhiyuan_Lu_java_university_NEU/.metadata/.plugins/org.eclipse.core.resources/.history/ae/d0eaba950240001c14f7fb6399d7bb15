@@ -1,0 +1,84 @@
+package neu.edu.csye6200;
+
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+
+public class Driver {
+	public static void main(String[] args) {
+		List<Integer> list = new ArrayList<>();
+		System.out.print(list);
+		NortheasternU.demo();
+	}
+/*
+ * show student state
+[Student [gpa=3.5, getId()=10006, getFirstName()=Tom, getLastName()=Ford, getAge()=22
+], Student [gpa=3.0, getId()=10005, getFirstName()=Adam, getLastName()=Smith, getAge()=25
+], Student [gpa=3.4, getId()=10004, getFirstName()=Chris, getLastName()=Johnson, getAge()=21
+]]
+show student state sort by ID
+[Student [gpa=3.4, getId()=10004, getFirstName()=Chris, getLastName()=Johnson, getAge()=21
+], Student [gpa=3.0, getId()=10005, getFirstName()=Adam, getLastName()=Smith, getAge()=25
+], Student [gpa=3.5, getId()=10006, getFirstName()=Tom, getLastName()=Ford, getAge()=22
+]]
+show student state sort by FirstName
+[Student [gpa=3.0, getId()=10005, getFirstName()=Adam, getLastName()=Smith, getAge()=25
+], Student [gpa=3.4, getId()=10004, getFirstName()=Chris, getLastName()=Johnson, getAge()=21
+], Student [gpa=3.5, getId()=10006, getFirstName()=Tom, getLastName()=Ford, getAge()=22
+]]
+show student state sort by LastName
+[Student [gpa=3.5, getId()=10006, getFirstName()=Tom, getLastName()=Ford, getAge()=22
+], Student [gpa=3.4, getId()=10004, getFirstName()=Chris, getLastName()=Johnson, getAge()=21
+], Student [gpa=3.0, getId()=10005, getFirstName()=Adam, getLastName()=Smith, getAge()=25
+]]
+show student state sort by Age
+[Student [gpa=3.4, getId()=10004, getFirstName()=Chris, getLastName()=Johnson, getAge()=21
+], Student [gpa=3.5, getId()=10006, getFirstName()=Tom, getLastName()=Ford, getAge()=22
+], Student [gpa=3.0, getId()=10005, getFirstName()=Adam, getLastName()=Smith, getAge()=25
+]]
+show student state sort by GPA
+[Student [gpa=3.0, getId()=10005, getFirstName()=Adam, getLastName()=Smith, getAge()=25
+], Student [gpa=3.4, getId()=10004, getFirstName()=Chris, getLastName()=Johnson, getAge()=21
+], Student [gpa=3.5, getId()=10006, getFirstName()=Tom, getLastName()=Ford, getAge()=22
+]]
+******************************************************
+show employee state
+[Employee [wage=35.0, getId()=20007, getFirstName()=David, getLastName()=Backer, getAge()=32
+], Employee [wage=57.0, getId()=20008, getFirstName()=Toms, getLastName()=Fords, getAge()=39
+], Employee [wage=55.0, getId()=20006, getFirstName()=Adam, getLastName()=Tomas, getAge()=36
+]]
+show Employee state sort by ID
+[Employee [wage=55.0, getId()=20006, getFirstName()=Adam, getLastName()=Tomas, getAge()=36
+], Employee [wage=35.0, getId()=20007, getFirstName()=David, getLastName()=Backer, getAge()=32
+], Employee [wage=57.0, getId()=20008, getFirstName()=Toms, getLastName()=Fords, getAge()=39
+]]
+show Employee state sort by FirstName
+[Employee [wage=55.0, getId()=20006, getFirstName()=Adam, getLastName()=Tomas, getAge()=36
+], Employee [wage=35.0, getId()=20007, getFirstName()=David, getLastName()=Backer, getAge()=32
+], Employee [wage=57.0, getId()=20008, getFirstName()=Toms, getLastName()=Fords, getAge()=39
+]]
+show Employee state sort by LastName
+[Employee [wage=35.0, getId()=20007, getFirstName()=David, getLastName()=Backer, getAge()=32
+], Employee [wage=57.0, getId()=20008, getFirstName()=Toms, getLastName()=Fords, getAge()=39
+], Employee [wage=55.0, getId()=20006, getFirstName()=Adam, getLastName()=Tomas, getAge()=36
+]]
+show Employee state sort by Age
+[Employee [wage=35.0, getId()=20007, getFirstName()=David, getLastName()=Backer, getAge()=32
+], Employee [wage=55.0, getId()=20006, getFirstName()=Adam, getLastName()=Tomas, getAge()=36
+], Employee [wage=57.0, getId()=20008, getFirstName()=Toms, getLastName()=Fords, getAge()=39
+]]
+show Employee state sort by Wage
+[Employee [wage=35.0, getId()=20007, getFirstName()=David, getLastName()=Backer, getAge()=32
+], Employee [wage=55.0, getId()=20006, getFirstName()=Adam, getLastName()=Tomas, getAge()=36
+], Employee [wage=57.0, getId()=20008, getFirstName()=Toms, getLastName()=Fords, getAge()=39
+]]
+******************************************************
+
+ * 
+ * 
+ * 
+ * 
+ * 
+ */
+		
+}

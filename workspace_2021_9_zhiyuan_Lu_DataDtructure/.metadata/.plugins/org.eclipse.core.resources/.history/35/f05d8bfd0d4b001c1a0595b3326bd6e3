@@ -1,0 +1,18 @@
+package edu.neu.csye6200;
+
+public class Demo {
+	public static void demo() {
+		Stack q=new Stack(5);
+		q.push(1);
+		q.push(2);
+		//q.pop();
+		q.pop();
+		q.push(3);
+		q.push(9);
+		System.out.println("top elements is: "+q.peek());
+		System.out.println("stack size is"+q.size);
+		System.out.println(q.isFull());
+		
+		System.out.println("***************");
+	}
+}

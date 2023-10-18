@@ -1,0 +1,3 @@
+10009,chargebattery,49.0
+10004,Applecare,9.0
+10001,rentacare,9.0

@@ -1,0 +1,21 @@
+package school;
+
+public class ValueTransferTest1 {
+       public static void main(String[] args) {
+		
+    	   int n=10;
+    	   int m=20;
+    	   int temp=n;
+    	   n=m;
+    	   m=temp;
+    	   System.out.println("m= "+m+"n= "+n);
+    	   
+    	   
+    	   
+    	   
+    	   
+    	   
+    	   
+    	   
+	}
+}

@@ -1,0 +1,11 @@
+package edu.neu.csye6200;
+
+public abstract String AnimalAbstractAPI  {
+	
+
+		@Override
+		public String toString() {
+			return super.toString();
+		
+}
+}

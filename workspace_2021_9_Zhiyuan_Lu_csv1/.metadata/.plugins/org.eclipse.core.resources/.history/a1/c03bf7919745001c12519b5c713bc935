@@ -1,0 +1,111 @@
+package edu.neu.csye6200;
+
+import java.io.File;
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
+import java.util.List;
+
+
+
+
+
+public class Demo {
+	public static void demo() throws IOException {
+		
+		System.out.println("*****************************************");
+		
+		
+		
+		
+//		instantiate person and student lists
+		List<Student> Students = new ArrayList<Student>();
+		List<Teacher> Teacher = new ArrayList<Teacher>();
+		
+
+		/*********state of students********************/
+		FileUtil utils = new FileUtil();
+		utils.writeStudentItems();
+		utils.readStudentItems();
+		System.out.println("Show: studentid, gpa ,id ,age,firstname, lastname,parentfirstname,parentlastname");
+		System.out.println("The state of all students:");
+		for(Student obj: utils.readStudentItems()) {
+			System.out.println(obj.toString());
+			Students.add(obj);				
+		}
+		/*********states of teacher********************/
+		utils.writeTeacherItems();
+		utils.readTeacherItems();
+		System.out.println("Show: id, gpa ,id ,age,firstname, lastname,parentfirstname,parentlastname,hourlywage");
+		System.out.println("The state of all teacher:");
+		for(Teacher obj1: utils.readTeacherItems()) {
+			System.out.println(obj1.toString());
+			Teacher.add(obj1);					
+		}
+//		/*********sort 5 times********************/
+//		System.out.println("Sort age of all students:");
+//		Collections.sort(Students,new CompareAge());
+//    	System.out.println(Students+"\n");
+//    	
+//    	System.out.println("Sort ID of all students:");
+//    	Collections.sort(Students, new CompareID());
+//    	System.out.println(Students);
+//    	System.out.println("Sort GPA of all students:");
+//    	Collections.sort(Students, new CompareGpa());
+//    	System.out.println(Students);
+//    	System.out.println("Sort FirstName of all students:");
+//    	Collections.sort(Students,new CompareFirstName());
+//    	System.out.println(Students);
+//    	System.out.println("Sort LastName of all students:");
+//    	Collections.sort(Students,new CompareLastName());
+//    	System.out.println(Students);
+		
+    	System.out.println("=================================================");
+    	
+    	System.out.println("*********88888888888888888888888888888888********");
+    	Students.sort(Comparator.comparing(Student::getId));
+    	System.out.println(Students+"\n");
+    	System.out.println("compare by id");
+    	Students.sort((o1,o2)->o1.getId()-o2.getId());
+    	System.out.println(Students);
+    	
+    	Students.sort(Comparator.comparing(Student::getGpa));
+    	System.out.println(Students+"\n");
+    	System.out.println("compare by gpa");
+    	Students.sort((o1,o2)->Double.compare(o1.getGpa(), o2.getGpa()));
+    	System.out.println(Students+"\n");
+    	
+    	Students.sort(Comparator.comparing(Student::getAge));
+    	System.out.println(Students+"\n");
+    	
+    	
+    	System.out.println("compare first name");
+    	Students.sort((o1,o2)->o1.getFirstname().compareTo(o2.getFirstname()));
+    	System.out.println(Students);
+    	
+    	System.out.println("compare last name");
+    	Students.sort((o1,o2)->o1.getLastname().compareTo(o2.getLastname()));
+    	System.out.println(Students);
+    	
+    	System.out.println("compare studentid");
+    	Students.sort((o1,o2)->o1.getStudentid()-o2.getStudentid());
+    	System.out.println(Students);
+    	
+//    	Students.sort(null);
+//    	System.out.println(Students+"\n");
+    	System.out.println("***************888888888888888888888888************");
+
+		
+		
+		
+		
+		System.out.println("******999999999999999999999999999999***********");
+		System.out.println("compare studentage");
+    	Students.stream().sorted((o1,o2)->o1.getAge()-o2.getAge()).forEach(<Student>Students);;
+    	System.out.println(Students);
+
+				
+				
+	}
+}

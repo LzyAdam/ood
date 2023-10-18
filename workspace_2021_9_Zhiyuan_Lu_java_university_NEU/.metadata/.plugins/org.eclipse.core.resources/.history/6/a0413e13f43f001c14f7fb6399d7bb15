@@ -1,0 +1,53 @@
+package neu.edu.csye6200;
+
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+
+public class Driver {
+	public static void main(String[] args) {
+		NortheasternU.demo();
+	}
+//public static void main(String[] args) {
+//	List<Student>student=new ArrayList<>();
+//	List<Employee>employee=new  ArrayList<>();
+//	student.add(new Student(10006,"Tom","Ford",22,3.5));
+//	student.add(new Student(10005,"Adam","Smith",25,3.0));
+//	student.add(new Student(10004,"Chris","Johnson",21,3.4));
+//	System.out.println("show student state");
+//	System.out.println(student);
+//	
+//	employee.add(new Employee(20007,"David","Backer",32,35));
+//	employee.add(new Employee(20008,"Toms","Fords",39,57));
+//	employee.add(new Employee(20006,"Adam","Tomas",36,55));
+//	System.out.println("show employee state");
+//	System.out.println(employee);
+//	
+//	Collections.sort(student,new StudentFirstNameSort());
+//	System.out.println(student);
+//	Collections.sort(student,new StudentLastNameSort());
+//	System.out.println(student);
+//	Collections.sort(student,new StudentGpaSort());
+//	System.out.println(student);
+//	Collections.sort(student,new StudentAgeSort());
+//	System.out.println(student);
+//	Collections.sort(student,new StudentIdSort());
+//	System.out.println(student);
+//	
+//	
+//	
+//	Collections.sort(employee,new EmployeeAgeSort());
+//	System.out.println(employee);
+//	Collections.sort(employee,new EmployeeIdSort());
+//	System.out.println(employee);
+//	Collections.sort(employee,new EmployeeLastNameSort());
+//	System.out.println(employee);
+//	Collections.sort(employee,new EmployeeFirstNameSort());
+//	System.out.println(employee);
+//	Collections.sort(employee,new EmployeeWageSort());
+//	System.out.println(employee);
+//	
+	
+//}
+		
+}

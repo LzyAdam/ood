@@ -1,0 +1,9 @@
+package Assignment1_zoo;
+
+public class ExtendTest {
+public static void main(String[] args) {
+	People p1=new People();
+	p1.age=2;
+	p1.eat();
+}
+}

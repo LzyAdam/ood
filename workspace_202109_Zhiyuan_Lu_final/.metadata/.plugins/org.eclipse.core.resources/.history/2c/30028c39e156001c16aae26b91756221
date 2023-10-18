@@ -1,0 +1,13 @@
+package edu.neu.csye6200;
+
+public class Demo {
+	public static void demo() {
+		 TwoAlternatingThreads t = new TwoAlternatingThreads();
+		Thread t1 = new Thread((Runnable) t);
+		Thread t2 = new Thread((Runnable) t);
+		
+		t1.start();
+		
+		t2.start();
+	}
+}

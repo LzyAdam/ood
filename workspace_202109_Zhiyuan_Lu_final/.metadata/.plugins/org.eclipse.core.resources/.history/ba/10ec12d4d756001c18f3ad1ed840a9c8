@@ -1,0 +1,54 @@
+package edu.neu.csye6200;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.List;
+
+public class Demo {
+	public static void demo() {
+		/**************************************/
+//		 List<AbstractPerson> perList = new ArrayList<AbstractPerson>(Arrays.asList( 
+//	              	new Person("1,25,Jim,311,11"),
+//	                new Person("2,21,Sam,315,15"),
+//	                new Person("3,17,Dan,314,14"),
+//	                new Person("4,19,Bob,312,12"),
+//	                new Person("5,16,Ann,310,10")
+//	                    )); 
+//		
+		WeightLossClub wlc = new WeightLossClub();
+		wlc.addPerson(new Person("1,25,Jim,311,11"));
+		wlc.addPerson(new Person("1,25,Jim,311,11"));
+		wlc.addPerson(new Person("1,25,Jim,311,11"));
+		wlc.addPerson(new Person("1,25,Jim,311,11"));
+		wlc.addPerson(new Person("1,25,Jim,311,11"));
+		/*********************************/
+//		List<AbstractPerson> club=new ArrayList<>(Arrays.asList(
+//				    new Person("1,25,Jim,311,11"),
+//	                new Person("2,21,Sam,315,15"),
+//	                new Person("3,17,Dan,314,14"),
+//	                new Person("4,19,Bob,312,12"),
+//	                new Person("5,16,Ann,310,10")));
+
+		System.out.println("show the club list");
+		wlc.showPerson();
+		//System.out.println(wlc);
+		//Collections.sort();
+//		System.out.println("sort by age");
+//		club.sort((o1,o2)->o1.getAge()-o2.getAge());
+//		System.out.println(club);
+//		
+//		System.out.println("sort by weight loss");
+//		club.sort((o1,o2)->Double.compare(o1.getWeightLossLbs(), o2.getWeightLossLbs()));
+//		System.out.println(club);
+//		
+//		System.out.println("sort by weight ");
+//		club.sort((o1,o2)->Double.compare(o1.getWeightLbs(), o2.getWeightLbs()));
+//		System.out.println(club);
+//		System.out.println("sort by name");
+//		club.sort((o1,o2)->o1.getName().compareTo(o2.getName()));
+//		System.out.println(club);
+		
+		
+	}
+}

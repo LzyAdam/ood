@@ -1,0 +1,20 @@
+package supertest;
+
+public class Person {
+   String name="Amy";
+   int age;
+   int id=1001;
+   public Person() {
+	      }
+   public Person(int age,String name) {
+	   this.age=age;
+	   this.name=name;
+   }   
+  
+   public void eat() {
+	   System.out.println("people eat food");
+   }
+   public void walk() {
+	   System.out.println("walk");
+   }
+}

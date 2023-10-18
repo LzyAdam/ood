@@ -1,0 +1,15 @@
+package edu.neu.csye6200;
+
+public class Queue {
+	 int[] arr;
+	 int capacity;
+	 int front;
+	 int rear;
+
+	public Queue(int size) {
+		arr=new int[size];
+		capacity=size;
+		front=0;
+		rear=-1;
+	}
+}

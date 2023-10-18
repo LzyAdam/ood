@@ -1,0 +1,18 @@
+package neu.edu.csye6200;
+
+import java.util.Comparator;
+
+
+
+	public class StudentFirstNameSort implements Comparator<Student> {
+		
+
+		@Override
+		public int compare(Student o1, Student o2) {
+			// TODO Auto-generated method stub
+			return  o1.getFirstName().compareTo(o2.getFirstName());
+		}
+	}
+	
+	
+

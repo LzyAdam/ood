@@ -1,0 +1,31 @@
+package neu.edu.csye6200;
+
+import java.util.ArrayList;
+import java.util.Comparator;
+import java.util.List;
+
+public class NortheasternU extends UniversityBase implements AbstractSchoolAPI{
+ public static void demo(){
+		List<Student>student=new ArrayList<>();
+		List<Employee>employee=new  ArrayList<>();
+		student.add(new Student(10006,"Tom","Ford",22,3.5));
+		student.add(new Student(10005,"Adam","Smith",25,3.0));
+		student.add(new Student(10004,"Chris","Johnson",21,3.4));
+		System.out.println("show student state");
+		System.out.println(student);
+	
+	
+}
+	
+//	List<Student>student=new ArrayList<>();
+//	List<Employee>employee=new  ArrayList<>();
+//	student.add(new Student(10006,"Tom","Ford",22,3.5));
+//	
+//	student.add(new Student("Jack",24,10009,4.8,20001));
+//	student.add(new Student("Tom",22,10006,3.0,20004));
+	
+		
+	
+	
+
+}

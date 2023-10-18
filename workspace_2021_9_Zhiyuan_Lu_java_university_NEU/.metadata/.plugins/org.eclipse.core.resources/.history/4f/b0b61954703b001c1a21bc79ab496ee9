@@ -1,0 +1,40 @@
+package neu.edu.csye6200;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class NortheasternU extends UniversityBase implements AbstractSchoolAPI{
+/*
+ * 
+ * 
+ * 10POINTS 5. Derive a NortheasternU class from the UniversityBase class,
+ *    implementing a demo method to:
+ *  a. Instantiate three Student objects derived from Person class, derived
+	from AbstractPersonAPI.
+ *  b. Instantiate three Employee objects derived from Person class, 
+	derived from AbstractPersonAPI.
+ *  c. Instantiate a NortheasternU object.
+ *  1. Add All Student and Employee objects to NortheasternU object
+ *  2. Show the state of NortheasternU object
+ *  20 POINTS  3. Sort All Students by: ID, First Name, Last Name, Age and Show 
+	the state of NortheasternU object after each sort.
+ *  20 POINTS 4. Sort All Employees by: ID, First Name, Last Name, Age and Show
+	the state of NortheasternU object afte
+ * 
+ * 
+ *  * 
+ * 
+ */
+	
+	List<Student>student=new ArrayList<>();
+	List<Employee>employee=new  ArrayList<>();
+	student.add(new Students(10006,"Tom","Ford",22,3.5));
+	
+	student.add(new Students("Jack",24,10009,4.8,20001));
+	student.add(new Students("Tom",22,10006,3.0,20004));
+	
+		
+	
+	
+
+}

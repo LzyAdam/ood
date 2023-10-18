@@ -1,0 +1,44 @@
+package cn.zoo;
+
+public class UserTest {
+public static void main(String[] args) {
+	
+	Person p1=new Person();
+	p1.sleep(8);
+	
+}
+}
+
+
+class Person{
+	
+	String name;
+	int age;
+	boolean isMale;
+	String nation;
+	
+	public void talk(String language) {
+		System.out.println("people can speak "+language);
+	}
+	
+	public void eat() {
+		System.out.println("people eat");
+			}
+	public void sleep(int hours) {
+		System.out.println("people sleep "+ hours);
+		eat();
+	}
+	
+	public String getName() {
+		return name;
+	}
+	
+	public String getNation(String nation){
+		String info="I am "+ nation;
+		return info;
+		
+	}
+	
+	
+	
+}

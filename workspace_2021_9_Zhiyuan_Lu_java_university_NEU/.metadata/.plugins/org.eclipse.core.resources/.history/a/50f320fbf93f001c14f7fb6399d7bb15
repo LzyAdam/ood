@@ -1,0 +1,71 @@
+package neu.edu.csye6200;
+
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Comparator;
+import java.util.List;
+
+public class UniversityBase implements AbstractSchoolAPI {
+	
+	private List<AbstractPersonAPI> student=new ArrayList<>();
+
+	@Override
+	public void addEmployee(AbstractPersonAPI employee) {
+		// TODO Auto-generated method stub
+		//List<Student>student=new ArrayList<>();
+		//List<Employee>employee=new  ArrayList<>();
+//		student.add(new Student(10006,"Tom","Ford",22,3.5));
+//		student.add(new Student(10005,"Adam","Smith",25,3.0));
+//		student.add(new Student(10004,"Chris","Johnson",21,3.4));
+	}
+
+	@Override
+	public void addStudent(AbstractPersonAPI student) {
+		this.student.add(student);
+	}
+
+	@Override
+	public String getEmployeesInfo() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public void showEmployees() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public String getStudentsInfo() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public void showStudents() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void show() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void sortEmployees(Comparator<AbstractPersonAPI> c) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void sortStudents(Comparator<AbstractPersonAPI> c) {
+		
+		
+	}
+
+	
+}
+

@@ -1,0 +1,19 @@
+package neu.edu.csye6200;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Driver {
+public static void main(String[] args) {
+	List<Student>student=new ArrayList<>();
+	List<Employee>employee=new  ArrayList<>();
+	student.add(new Student(10006,"Tom","Ford",22,3.5));
+	student.add(new Student(10006,"Tom","Ford",22,3.5));
+	student.add(new Student(10006,"Tom","Ford",22,3.5));
+	
+}
+	
+	
+	
+	
+}

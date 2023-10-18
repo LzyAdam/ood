@@ -1,0 +1,27 @@
+package Assignment1_zoo;
+
+public class Student extends People {
+
+	String name;
+	int age;
+	String major;
+	
+	public Student() {
+		
+	}
+	public Student(String name, int age, String major) {
+		this.name=name;
+		this.age=age;
+		this.major=major;
+	}
+//	public void eat() {
+//		System.out.println("eat a lot");
+//			}
+//	public void sleep() {
+//		System.out.println("sleep an hour");
+//			}
+	public void student() {
+		System.out.println("student study");
+	}
+	
+}

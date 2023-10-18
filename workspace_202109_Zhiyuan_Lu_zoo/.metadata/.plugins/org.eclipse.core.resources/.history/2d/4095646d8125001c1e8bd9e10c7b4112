@@ -1,0 +1,57 @@
+package cn.zoo;
+
+public class Interface {
+	public static void main(String[] args) {
+		System.out.println(Flyable.Max_SPEED);
+		System.out.println(Flyable.MIN_SPEED);
+		Plane p1=new Plane();
+		p1.fly();
+	}
+
+}
+interface Flyable{
+	public static final int Max_SPEED=7900;
+	public static final int MIN_SPEED=0;
+	public abstract void fly();
+	public abstract void stop();
+}
+interface Attackable{
+	void attck();
+}
+ class Plane implements Flyable{
+	
+
+	@Override
+	public void fly() {
+		// TODO Auto-generated method stub
+		System.out.println("fly");
+	}
+
+	@Override
+	public void stop() {
+		// TODO Auto-generated method stub
+		System.out.println("stop");
+	}
+	
+}
+  class Bullet extends Object implements  Flyable,Attackable{
+
+	@Override
+	public void attck() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void fly() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void stop() {
+		// TODO Auto-generated method stub
+		
+	}
+	  
+  }

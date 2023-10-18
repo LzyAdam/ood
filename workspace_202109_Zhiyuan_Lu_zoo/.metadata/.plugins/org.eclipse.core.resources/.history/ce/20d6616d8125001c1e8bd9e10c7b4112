@@ -1,0 +1,55 @@
+package cn.zoo;
+
+public class USBTest {
+public static void main(String[] args) {
+	Computer com=new Computer();
+	Flash flash=new Flash();
+	com.transferdata(flash);
+	
+}
+}
+class Computer{
+	public void transferdata(USB usb) {
+		usb.start();
+		System.out.println("information");
+		usb.stop();
+	}
+}
+
+interface USB{
+	
+	void start();
+	
+	void stop();
+}
+
+class Flash implements USB{
+
+	@Override
+	public void start() {
+		// TODO Auto-generated method stub
+		System.out.println("USB Start");
+	}
+
+	@Override
+	public void stop() {
+		// TODO Auto-generated method stub
+		System.out.println("USB Stop");
+	}
+	
+}
+class Printer implements USB{
+
+	@Override
+	public void start() {
+		// TODO Auto-generated method stub
+		System.out.println("Printer Stop");
+	}
+
+	@Override
+	public void stop() {
+		// TODO Auto-generated method stub
+		System.out.println("Printer Stop");
+	}
+	
+}

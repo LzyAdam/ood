@@ -1,0 +1,20 @@
+package edu.neu.csye6200;
+
+public abstract class AbstractClub {
+public abstract void addPerson(AbstractPerson abstractPerson);
+	
+	public abstract String getPersonInfo();	
+	public abstract void showPerson();	
+
+	
+
+	public abstract void sortPersonByName();
+
+	public abstract void sortPersonByWeightLoss();
+	
+	public abstract void graphCurrentWeightLoss();
+	
+	public abstract void graphProjectedWeightLossByOneMonth();
+	
+	public abstract void graphProjectedWeightLossByOneYear();
+}

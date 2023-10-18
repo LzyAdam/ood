@@ -1,0 +1,25 @@
+package supertest;
+
+public class Student extends Person {
+   String major;
+   int id=1002;
+   public Student() {
+	   
+   }
+   public Student(String major) {
+	   this.major=major;
+   }
+   @Override
+	public void eat() {
+		System.out.println("student should eat healthy food");
+	}
+   public void study() {
+	   System.out.println("student can study");
+	  this.eat();
+	  super.eat();
+   }
+   public void show() {
+	    System.out.println("NUid= "+id);
+	    System.out.println("PCid= "+super.id);
+   }
+}

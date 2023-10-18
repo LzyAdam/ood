@@ -1,0 +1,30 @@
+package neu.edu.csye6200;
+
+public class Student extends Person {
+	public Student(int id, String firstname, String lastname, int age) {
+		super(id, firstname, lastname, age);
+		// TODO Auto-generated constructor stub
+	}
+
+
+
+	private double gpa;
+
+	public double getGpa() {
+		return gpa;
+	}
+
+	public void setGpa(double gpa) {
+		this.gpa = gpa;
+	}
+
+	
+
+	@Override
+	public String toString() {
+		return "Student [gpa=" + gpa + ", getId()=" + getId() + ", getFirstName()=" + getFirstName()
+				+ ", getLastName()=" + getLastName() + ", getAge()=" + getAge() + "]";
+	}
+	
+	
+}

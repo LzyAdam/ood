@@ -1,0 +1,16 @@
+package Assignment1_zoo;
+
+public class ExtendTest {
+public static void main(String[] args) {
+	People p1=new People();
+	p1.age=2;
+	p1.eat();
+	
+	
+	Student s1=new Student();
+	s1.age=3;
+	s1.sleep();
+	
+	
+}
+}

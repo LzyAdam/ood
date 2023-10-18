@@ -1,0 +1,35 @@
+package edu.neu.csye6200;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.List;
+
+public class Demo {
+	public static void demo() {
+		/*****************************
+		"1,25,Jim,311,11"
+        "2,21,Sam,315,15"
+        "3,17,Dan,314,14"
+        "4,19,Bob,312,12"
+        "5,16,Ann,310,10"
+        "6,23,Eve,313,13"
+        *********/
+		WeightLossClub wlc = new WeightLossClub();
+		wlc.addPerson(new Person("1,25,Jim,311,11"));
+		wlc.addPerson(new Person("2,21,Sam,315,15"));
+		wlc.addPerson(new Person("3,17,Dan,314,14"));
+		wlc.addPerson(new Person("4,19,Bob,312,12"));
+		wlc.addPerson(new Person("5,16,Ann,310,10"));
+		wlc.addPerson(new Person("6,23,Eve,313,13"));
+		/*********************************/
+
+
+		
+		wlc.sortandshowPerson();
+
+		
+		
+		
+	}
+}

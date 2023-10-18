@@ -1,0 +1,13 @@
+package cn.zoo;
+
+public class Interface {
+	public static void main(String[] args) {
+		System.out.println(Flyable.Max_SPEED);
+		System.out.println(Flyable.MIN_SPEED);
+	}
+
+}
+interface Flyable{
+	public static final int Max_SPEED=7900;
+	public static final int MIN_SPEED=0;
+}

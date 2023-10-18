@@ -1,0 +1,33 @@
+package edu.neu.csye6200;
+
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+
+public class Demo {
+	public static void demo() {
+		
+		List<Person> club=new ArrayList();
+		club.add(new Person(1,25,"Jim",311,11));
+		club.add(new Person(2,21,"Sam",315,15));
+		club.add(new Person(3,17,"Dan",314,14));
+		club.add(new Person(4,19,"Bob",312,12));
+		club.add(new Person(5,16,"Ann",310,10));
+		club.add(new Person(6,23,"Eve",313,13));
+		System.out.println("show the club list");
+		System.out.println(club);
+		//Collections.sort();
+		System.out.println("sort by age");
+		club.sort((o1,o2)->o1.getAge()-o2.getAge());
+		System.out.println(club);
+		
+		System.out.println("sort by weight loss");
+		club.sort((o1,o2)->Double.compare(o1.getWeightLossLbs(), o2.getWeightLossLbs()));
+		System.out.println(club);
+		
+		
+		
+		
+		
+	}
+}

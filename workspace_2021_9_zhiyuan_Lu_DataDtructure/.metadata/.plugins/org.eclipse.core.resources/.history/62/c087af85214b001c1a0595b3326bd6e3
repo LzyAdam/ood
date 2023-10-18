@@ -1,0 +1,53 @@
+package edu.neu.csye6200;
+
+public class StackGeneric<T> {
+	Integer size;
+	Boolean isEmpty;
+	Boolean isFull;
+	 T arr[];
+	 Integer capacity;
+	 Integer top;
+	//Push
+	//Pop
+	int peek;
+	public StackGeneric(Integer size) {
+		Integer[] arr=new Integer[size];
+		capacity=size;
+		top=-1;
+	}
+	public int size() {
+		return top+1;
+	}
+	public boolean isEmpty() {
+		return top==-1;
+	}
+	public boolean isFull() {
+		return(top==capacity-1);
+	}
+	public void push(T item) {
+		if(isFull()) {
+			System.exit(1);//error
+		}
+		System.out.println("inserting"+item);
+		arr[++top]=item;
+		
+	}
+	public T pop() {
+		if(isEmpty()) {
+			System.exit(1);
+		}
+		System.out.println("Removing"+peek());
+		return arr[top--];
+		
+	}
+	public int peek() {
+		if(!isEmpty()) {
+			return (int) arr[top];
+		}else {
+			System.exit(1);
+		}
+		return -1;
+	}
+	
+
+}

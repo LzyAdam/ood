@@ -1,0 +1,9 @@
+package cn.zoo;
+
+public class ValuetransferTest {
+         public static void main(String[] args) {
+			int m=10;
+			int n=m;
+			System.out.println("m= "+m+ ", n= " +n);
+		}
+}

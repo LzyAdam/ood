@@ -1,0 +1,25 @@
+package neu.edu.csye6200;
+
+public class Employee extends Person {
+	double wage;
+
+	public double getWage() {
+		return wage;
+	}
+
+	public void setWage(double wage) {
+		this.wage = wage;
+	}
+
+	public Employee(double wage) {
+		super(age, firstname, firstname, age);
+		this.wage = wage;
+	}
+
+	@Override
+	public String toString() {
+		return "Employee [wage=" + wage + ", getId()=" + getId() + ", getFirstName()=" + getFirstName()
+				+ ", getLastName()=" + getLastName() + ", getAge()=" + getAge() + "]";
+	}
+	
+}

@@ -1,0 +1,21 @@
+package school;
+
+public class AnimalTest {
+         public static void main(String[] args) {
+			Animal a=new Animal();
+			a.age=1;
+			a.name=("Tom");
+			a.legs=4;
+			a.eat();
+			System.out.println(a.age+a.legs+a.name);
+		}
+}
+class Animal{
+	String name;
+	int age;
+	int legs;
+	public void eat(){
+		System.out.println("eat");
+	}
+	
+}

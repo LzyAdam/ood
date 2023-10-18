@@ -1,0 +1,4 @@
+10001,19,Adam,Smith,Bob,Smith,20001,3.1
+10005,18,David,Frank,Chris,Frank,20005,3.0
+10002,17,Chris,White,Bob,White,20002,3.7
+10000,20,Bobby,Black,David,Black,20000,3.2

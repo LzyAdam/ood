@@ -1,0 +1,142 @@
+package edu.neu.csye6200;
+
+public class Person extends AbstractPerson{
+	private int id;
+	private int age;
+	private String name;
+	private int weightLbs;
+	private int weightLossLbs;
+	Person(){
+		
+	}
+	public Person(String csvData) {
+		super();
+		String[] tokens=csvData.split(",");
+		this.id = getIntFromString(tokens[0]);
+		
+		//this.id = getIntFromString(tokens[0]);
+		this.age = getIntFromString(tokens[1]);
+		this.name = tokens[2];
+		this.weightLbs = getIntFromString(tokens[3]);
+		this.weightLossLbs = getIntFromString(tokens[4]);
+	}
+//	public int getId() {
+//		return id;
+//	}
+//	public void setId(int id) {
+//		this.id = id;
+//	}
+//	public int getAge() {
+//		return age;
+//	}
+//	public void setAge(int age) {
+//		this.age = age;
+//	}
+//	public String getName() {
+//		return name;
+//	}
+//	public void setName(String name) {
+//		this.name = name;
+//	}
+//	public int getWeightLbs() {
+//		return weightLbs;
+//	}
+//	public void setWeightLbs(int weightLbs) {
+//		this.weightLbs = weightLbs;
+//	}
+//	public Integer getWeightLossLbs() {
+//		return weightLossLbs;
+//	}
+//	public void setWeightLossLbs(int weightLossLbs) {
+//		this.weightLossLbs = weightLossLbs;
+//	}
+//	@Override
+//	public String toString() {
+//		return "Person [id=" + id + ", age=" + age + ", name=" + name + ", weightLbs=" + weightLbs + ", weightLossLbs="
+//				+ weightLossLbs + "]"+"\n";
+//	}
+	@Override
+	public int getId() {
+	// TODO Auto-generated method stub
+	return id;
+	}
+	@Override
+	public void setId(int id) {
+	// TODO Auto-generated method stub
+	this.id=id;
+	}
+	@Override
+	public int getAge() {
+		// TODO Auto-generated method stub
+		return age;
+	}
+	@Override
+	public void setAge(int age) {
+		// TODO Auto-generated method stub
+		this.age=age;
+	}
+	@Override
+	public String getName() {
+	// TODO Auto-generated method stub
+	return name;
+	}
+	@Override
+	public void setName(String Name) {
+	// TODO Auto-generated method stub
+		this.name=name;
+	}
+	@Override
+	public int getWeightLbs() {
+	// TODO Auto-generated method stub
+		return weightLbs;
+	}
+	@Override
+	public void setWeightLbs(int weightLbs) {
+	// TODO Auto-generated method stub
+		this.weightLbs=weightLbs;
+	}
+	@Override
+	public Integer getWeightLossLbs() {
+	// TODO Auto-generated method stub
+	return weightLossLbs;
+	}
+	@Override
+	public void setWeightLossLbs(int weightLossLbs) {
+	// TODO Auto-generated method stub
+		this.weightLossLbs=weightLossLbs;
+	}
+	@Override
+	public void show() {
+	// TODO Auto-generated method stub
+	
+	}
+	public int getIntFromString(String s) {
+		int n=0;
+		try {
+			n=Integer.parseInt(s);
+		} catch (NumberFormatException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		return n;
+		
+	}
+	@Override
+	public String toString() {
+		StringBuilder sb=new StringBuilder();
+		sb.append("\n");
+		sb.append(" id:").append(getId());
+		sb.append(" Age:").append(getAge());
+		sb.append(" Name:").append(getName());
+		sb.append(" WeightLbs:").append(getWeightLbs());
+		sb.append(" WeightLossLbs:").append(getWeightLossLbs());
+		sb.append("\n");
+		return sb.toString();
+	}
+	
+	
+	
+	
+	
+	
+}

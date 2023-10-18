@@ -1,0 +1,31 @@
+package java;
+
+public class Person {
+   
+	
+	String name;
+	int age;
+	
+	public Person() {
+		
+	}
+	
+	public Person(String name, int age) {
+		this.age=age;
+		this.name=name;
+	}
+	
+	
+	public void eat() {
+		System.out.println("eat a lot");
+	}
+	public void walk(int distance) {
+		
+		System.out.println("people can walk"+distance);
+	}
+	
+	
+	
+	
+	
+}

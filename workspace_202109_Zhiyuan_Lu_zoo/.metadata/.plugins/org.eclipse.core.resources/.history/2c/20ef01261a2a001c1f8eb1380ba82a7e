@@ -1,0 +1,24 @@
+package collectionTest;
+
+
+
+import java.util.ArrayList;
+
+public class collection {
+
+         public void test1() {
+        	 ArrayList<Integer> coll=new ArrayList();
+        	 //coll.add("AA");
+        	 //coll.add("BB");
+        	 coll.add(123);
+        	 //coll.add(new Date));
+        	System.out.println(coll.size()); 
+        	 
+         }	
+         
+         public static void main(String[] args) {
+        	collection c = new collection();
+        	c.test1();
+         }
+	
+}

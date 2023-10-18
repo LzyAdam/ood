@@ -1,0 +1,77 @@
+package neu.edu.csye6200;
+
+public class Person extends AbstractPersonAPI{
+	int id;
+	String firstname;
+	String lastname;
+	int age;
+	
+	public Person(int id, String firstname, String lastname, int age) {
+		super();
+		this.id = id;
+		this.firstname = firstname;
+		this.lastname = lastname;
+		this.age = age;
+	}
+
+	@Override
+	public int getId() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public void setId(int id) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public String getFirstName() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public void setFirstName(String firstName) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public String getLastName() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public void setLastName(String lastName) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public int getAge() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public void setAge(int age) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void show() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public String toString() {
+		return "Person [id=" + id + ", firstname=" + firstname + ", lastname=" + lastname + ", age=" + age + "\n"+"]";
+	}
+	
+	
+}
